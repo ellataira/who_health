@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+#chart {
+  max-width: 800px;
+}
+
+.axis-label {
+  font-size: 12px;
+}
