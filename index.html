@@ -1,310 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unemployment rate study</title>
     <link href="style.css" rel="stylesheet" />
-  </head>
-  <body>
+</head>
+
+<body>
     <h1>World Health Organization (WHO) Life Expectancy</h1>
 
     <h3>Overall Introduction</h3>
 
     <p>
-      An overall introduction to your project, including the topic and tasks
+        An overall introduction to your project, including the topic and tasks
     </p>
 
     <p>
-      A paragraph to introduce the data, including the size, source and
-      attributes
+        A paragraph to introduce the data, including the size, source and
+        attributes
     </p>
 
     <p>At least two links to the references.</p>
 
     <p>
-      To learn more about the US unemployment rate and its implications, you can
-      visit the
-      <a href="https://www.bls.gov/">Bureau of Labor Statistics website</a> or
-      explore analysis reports from reputable research organizations like
-      <a href="https://www.pewresearch.org/">Pew Research Center</a>.
+        To learn more about the US unemployment rate and its implications, you can
+        visit the
+        <a href="https://www.bls.gov/">Bureau of Labor Statistics website</a> or
+        explore analysis reports from reputable research organizations like
+        <a href="https://www.pewresearch.org/">Pew Research Center</a>.
     </p>
 
     <h3>Introduction to the data</h3>
 
     <p>
-      Our analysis makes use of two datasets. the first data is a data set
-      called `us_statewide_crime.csv` which contains the following crime
-      statistics for all US states and the District of Columbia in 2010. The
-      data has 50 rows with 9 features. The detail information about the
-      features are listed in the following table:
+        Our analysis makes use of two datasets. the first data is a data set
+        called `us_statewide_crime.csv` which contains the following crime
+        statistics for all US states and the District of Columbia in 2010. The
+        data has 50 rows with 9 features. The detail information about the
+        features are listed in the following table:
     </p>
 
-        <div class="center">
+    <div class="center">
         <table class="tg">
             <thead>
-              <tr>
-                <th class="tg-0lax">Variable Name</th>
-                <th class="tg-0lax">Details</th>
-              </tr>
+                <tr>
+                    <th class="tg-0lax">Variable Name</th>
+                    <th class="tg-0lax">Details</th>
+                </tr>
             </thead>
             <tbody>
-              <tr>
-                <td class="tg-0lax">Country</td>
-                <td class="tg-0lax">Country</td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">Year</td>
-                <td class="tg-0lax">Year</td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">Status</td>
-                <td class="tg-0lax">Developing or Developed status</td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">Life Expectancy</td>
-                <td class="tg-0lax">Life Expectancy in years</td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">Adult Mortality</td>
-                <td class="tg-0lax">Adult Mortality Rates of both sexes (probability of dying between 15 and 60 years per 1000 population)                </td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">Infant Deaths</td>
-                <td class="tg-0lax">Number of Infant Deaths per 1000 population
+                <tr>
+                    <td class="tg-0lax">Country</td>
+                    <td class="tg-0lax">Country</td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">Year</td>
+                    <td class="tg-0lax">Year</td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">Status</td>
+                    <td class="tg-0lax">Developing or Developed status</td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">Life Expectancy</td>
+                    <td class="tg-0lax">Life Expectancy in years</td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">Adult Mortality</td>
+                    <td class="tg-0lax">Adult Mortality Rates of both sexes (probability of dying between 15 and 60
+                        years per 1000 population) </td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">Infant Deaths</td>
+                    <td class="tg-0lax">Number of Infant Deaths per 1000 population
 
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">Alcohol</td>
-                <td class="tg-0lax">Alcohol, recorded per capita (15+) consumption (in litres of pure alcohol)                </td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">Percentage Expenditure</td>
-                <td class="tg-0lax">Expenditure on health as a percentage of Gross Domestic Product per capita(%)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">Alcohol</td>
+                    <td class="tg-0lax">Alcohol, recorded per capita (15+) consumption (in litres of pure alcohol) </td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">Percentage Expenditure</td>
+                    <td class="tg-0lax">Expenditure on health as a percentage of Gross Domestic Product per capita(%)
 
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">Hepatitis B
-                </td>
-                <td class="tg-0lax">Hepatitis B (HepB) immunization coverage among 1-year-olds (%)</td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">Measles
-                </td>
-                <td class="tg-0lax">Measles - number of reported cases per 1000 population
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">BMI</td>
-                <td class="tg-0lax">Average Body Mass Index of entire population
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">Hepatitis B
+                    </td>
+                    <td class="tg-0lax">Hepatitis B (HepB) immunization coverage among 1-year-olds (%)</td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">Measles
+                    </td>
+                    <td class="tg-0lax">Measles - number of reported cases per 1000 population
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">BMI</td>
+                    <td class="tg-0lax">Average Body Mass Index of entire population
 
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">Under-five Deaths
-                </td>
-                <td class="tg-0lax">Number of under-five deaths per 1000 population
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">Under-five Deaths
+                    </td>
+                    <td class="tg-0lax">Number of under-five deaths per 1000 population
 
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">Polio</td>
-                <td class="tg-0lax">Polio (Pol3) immunization coverage among 1-year-olds (%)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">Polio</td>
+                    <td class="tg-0lax">Polio (Pol3) immunization coverage among 1-year-olds (%)
 
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">Total expenditure
-                </td>
-                <td class="tg-0lax">General government expenditure on health as a percentage of total government expenditure (%)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">Total expenditure
+                    </td>
+                    <td class="tg-0lax">General government expenditure on health as a percentage of total government
+                        expenditure (%)
 
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">Diphtheria</td>
-                <td class="tg-0lax">Diphtheria tetanus toxoid and pertussis (DTP3) immunization coverage among 1-year-olds (%)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">Diphtheria</td>
+                    <td class="tg-0lax">Diphtheria tetanus toxoid and pertussis (DTP3) immunization coverage among
+                        1-year-olds (%)
 
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">HIV/AIDS
-                </td>
-                <td class="tg-0lax">Deaths per 1 000 live births HIV/AIDS (0-4 years)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">HIV/AIDS
+                    </td>
+                    <td class="tg-0lax">Deaths per 1 000 live births HIV/AIDS (0-4 years)
 
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">GDP
-                </td>
-                <td class="tg-0lax">Gross Domestic Product per capita (in USD)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">GDP
+                    </td>
+                    <td class="tg-0lax">Gross Domestic Product per capita (in USD)
 
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">Population
-                </td>
-                <td class="tg-0lax">Population of the country
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">Population
+                    </td>
+                    <td class="tg-0lax">Population of the country
 
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">Thinness 1-19 years
-                </td>
-                <td class="tg-0lax">Prevalence of thinness among children and adolescents for Age 10 to 19 (% )
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">Thinness 1-19 years
+                    </td>
+                    <td class="tg-0lax">Prevalence of thinness among children and adolescents for Age 10 to 19 (% )
 
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">Thinness 5-9 years</td>
-                <td class="tg-0lax">Prevalence of thinness among children for Age 5 to 9(%)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">Thinness 5-9 years</td>
+                    <td class="tg-0lax">Prevalence of thinness among children for Age 5 to 9(%)
 
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">Income composition of resources
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">Income composition of resources
 
-                </td>
-                <td class="tg-0lax">Human Development Index in terms of income composition of resources (index ranging from 0 to 1)
-
-
-
-                </td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">Schooling
-                </td>
-                <td class="tg-0lax">Number of years of Schooling(years)
+                    </td>
+                    <td class="tg-0lax">Human Development Index in terms of income composition of resources (index
+                        ranging from 0 to 1)
 
 
 
-                </td>
-              </tr>
-            
-              
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">Schooling
+                    </td>
+                    <td class="tg-0lax">Number of years of Schooling(years)
+
+
+
+                    </td>
+                </tr>
+
+
             </tbody>
-            </table>
-        </div>
-        
-        <h3>Life Expectancy of Selected Country vs. International Average</h3>
-        
-        <div class = 'container'>
-            <div class = 'image'>
-                <iframe src="life_expectancy_select_vs_average.html" width="1000px" height="700px" frameborder="0"></iframe>
-            </div>
-            <div class = 'text'>
-                <p> 
-                    We also need a paragraph to explain the takeaway of
-the visualization on the webpage, and a paragraph to explain the design idea for the visualization on
-the separated word document. 
-                </p>
-            </div>            
-        </div>
-        
-        <h3> Education vs. Resources</h3>
-
-        <div class="container">
-        <div class = 'center'>
-            <iframe src="education_v_resources_scatter.html" width="85%" height="550px" frameborder="0"></iframe>
-        </div>
-        <div class = 'text'>
-            <p> 
-                We also need a paragraph to explain the takeaway of
-the visualization on the webpage, and a paragraph to explain the design idea for the visualization on
-the separated word document. 
-
-            </p>
-        </div>      
+        </table>
     </div>
+
+
 
     <h3>Life Expectancy of Selected Country vs. International Average</h3>
 
     <div class="container">
-      <div class="image">
-        <iframe
-          src="life_expectancy_select_vs_average.html"
-          width="1000px"
-          height="700px"
-          frameborder="0"
-        ></iframe>
-      </div>
-      <div class="text">
-        <p>
-          We also need a paragraph to explain the takeaway of the visualization
-          on the webpage, and a paragraph to explain the design idea for the
-          visualization on the separated word document.
-        </p>
-      </div>
+        <div class="image">
+            <iframe src="life_expectancy_select_vs_average.html" width="1000px" height="700px" frameborder="0"></iframe>
+        </div>
+        <div class="text">
+            <p>
+                We also need a paragraph to explain the takeaway of the visualization
+                on the webpage, and a paragraph to explain the design idea for the
+                visualization on the separated word document.
+            </p>
+        </div>
     </div>
 
     <h3>Education vs. Resources</h3>
 
     <div class="container">
-      <div class="center">
-        <iframe
-          src="education_v_resources_scatter.html"
-          width="85%"
-          height="550px"
-          frameborder="0"
-        ></iframe>
-      </div>
-      <div class="text">
-        <p>
-          We also need a paragraph to explain the takeaway of the visualization
-          on the webpage, and a paragraph to explain the design idea for the
-          visualization on the separated word document.
-        </p>
-      </div>
+        <div class="center">
+            <iframe src="education_v_resources_scatter.html" width="85%" height="550px" frameborder="0"></iframe>
+        </div>
+        <div class="text">
+            <p>
+                We also need a paragraph to explain the takeaway of the visualization
+                on the webpage, and a paragraph to explain the design idea for the
+                visualization on the separated word document.
+            </p>
+        </div>
     </div>
 
     <h3>Top 20 Countries by Infant Deaths</h3>
 
     <div class="container">
-      <div class="center">
-        <iframe
-          src="infant-deaths/infant-deaths.html"
-          width="85%"
-          height="550px"
-          frameborder="0"
-        ></iframe>
-      </div>
-      <div class="text">
-        <p>
-          We also need a paragraph to explain the takeaway of the visualization
-          on the webpage, and a paragraph to explain the design idea for the
-          visualization on the separated word document.
-        </p>
-      </div>
+        <div class="center">
+            <iframe src="infant-deaths/infant-deaths.html" width="85%" height="550px" frameborder="0"></iframe>
+        </div>
+        <div class="text">
+            <p>
+                We also need a paragraph to explain the takeaway of the visualization
+                on the webpage, and a paragraph to explain the design idea for the
+                visualization on the separated word document.
+            </p>
+        </div>
     </div>
 
 
     <h3>HIV/AIDS Deaths Over Time</h3>
 
     <div class="container">
-      <div class="center">
-        <iframe
-          src="hivaids_vs_year_country.html"
-          width="85%"
-          height="550px"
-          frameborder="0"
-        ></iframe>
-      </div>
-      <div class="text">
-        <p>
-          We also need a paragraph to explain the takeaway of the visualization
-          on the webpage, and a paragraph to explain the design idea for the
-          visualization on the separated word document.
-        </p>
-      </div>
+        <div class="center">
+            <iframe src="hivaids_vs_year_country.html" width="85%" height="550px" frameborder="0"></iframe>
+        </div>
+        <div class="text">
+            <p>
+                We also need a paragraph to explain the takeaway of the visualization
+                on the webpage, and a paragraph to explain the design idea for the
+                visualization on the separated word document.
+            </p>
+        </div>
     </div>
 
-    <h3>Graph 5</h3>
+    <h3>Life Expectancy World Map</h3>
 
     <div class="container">
       <div class="center">
         <iframe
-          src="summary.html"
+          src="life_expectancy_map.html"
           width="85%"
           height="550px"
           frameborder="0"
@@ -318,11 +275,27 @@ the separated word document.
         </p>
       </div>
     </div>
+    
+    <h3>Graph 5</h3>
+
+    <div class="container">
+        <div class="center">
+            <iframe src="summary.html" width="85%" height="550px" frameborder="0"></iframe>
+        </div>
+        <div class="text">
+            <p>
+                We also need a paragraph to explain the takeaway of the visualization
+                on the webpage, and a paragraph to explain the design idea for the
+                visualization on the separated word document.
+            </p>
+        </div>
+    </div>
 
     <h3>Conclusion</h3>
-        <p>
-            A summary for your findings, including what you have learned from the data visualization and what
-can be done in the future.
-        </p>
-  </body>
+    <p>
+        A summary for your findings, including what you have learned from the data visualization and what
+        can be done in the future.
+    </p>
+</body>
+
 </html>
