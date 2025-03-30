@@ -4,43 +4,39 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unemployment rate study</title>
+    <title>World Health Organization (WHO) Life Expectancy</title>
     <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Comfortaa:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <h1>World Health Organization (WHO) Life Expectancy</h1>
 
-    <h3>Overall Introduction</h3>
+    <h3>🌎 Introduction 🌎</h3>
 
     <p>
-        An overall introduction to your project, including the topic and tasks
+        The objective of this project is to analyze contributing factors to average life expectancy between countries.
+        We will consider economic, health, and social factors and how they relate to life expectancy.
+        Life expectancy is important to study as it is used to measure a population’s health. We aim to discover
+        relationships between these factors and life expectancy, offering insights into which factors contribute most to
+        longer, healthier lives. Identifying key factors can help governments and policymakers prioritize areas of
+        improvement to invest in, ultimately improving global health outcomes.
     </p>
+
+    <h3>🌎 Data 🌎</h3>
 
     <p>
-        A paragraph to introduce the data, including the size, source and
-        attributes
+        We are sourcing our data from Kaggle. The dataset has 2938 entries (observations) and 22 attributes.
+        This dataset represents the average life expectancy in a country in a year (between 2000-2015).
+        Each observation includes factors as described in the table below.
+        Essentially, this data reflects health-related factors in a country each year and that year’s average life
+        expectancy.
     </p>
 
-    <p>At least two links to the references.</p>
 
-    <p>
-        To learn more about the US unemployment rate and its implications, you can
-        visit the
-        <a href="https://www.bls.gov/">Bureau of Labor Statistics website</a> or
-        explore analysis reports from reputable research organizations like
-        <a href="https://www.pewresearch.org/">Pew Research Center</a>.
-    </p>
-
-    <h3>Introduction to the data</h3>
-
-    <p>
-        Our analysis makes use of two datasets. the first data is a data set
-        called `us_statewide_crime.csv` which contains the following crime
-        statistics for all US states and the District of Columbia in 2010. The
-        data has 50 rows with 9 features. The detail information about the
-        features are listed in the following table:
-    </p>
+    <a href="https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who" target="_blank">
+        Life Expectancy (WHO)
+    </a>
 
     <div class="center">
         <table class="tg">
@@ -173,54 +169,75 @@
                     </td>
                     <td class="tg-0lax">Human Development Index in terms of income composition of resources (index
                         ranging from 0 to 1)
-
-
-
                     </td>
                 </tr>
                 <tr>
                     <td class="tg-0lax">Schooling
                     </td>
                     <td class="tg-0lax">Number of years of Schooling(years)
-
-
-
                     </td>
                 </tr>
-
-
             </tbody>
         </table>
     </div>
 
+    <p>
+        For further reading on global life expectancy:
+    <ul>
+        <li>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7146991/" target="_blank">
+                LIFE EXPECTANCY AND MORTALITY RATES IN THE UNITED STATES, 1959-2017
+            </a>
+        </li>
+        <li>
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5388903/" target="_blank">
+                Global, regional, and national life expectancy, all-cause mortality, and cause-specific mortality for
+                249 causes of death, 1980–2015: a systematic analysis for the Global Burden of Disease Study 2015
+            </a>
+        </li>
+    </ul>
+    </p>
 
 
     <h3>Life Expectancy of Selected Country vs. International Average</h3>
 
     <div class="container">
         <div class="image">
-            <iframe src="life_expectancy_select_vs_average.html" width="1000px" height="700px" frameborder="0"></iframe>
+            <iframe src="life_expectancy_select_vs_average.html" width="1000px" height="620px" frameborder="0"></iframe>
         </div>
         <div class="text">
             <p>
-                We also need a paragraph to explain the takeaway of the visualization
-                on the webpage, and a paragraph to explain the design idea for the
-                visualization on the separated word document.
+                This visualization displays life expectancy in years over time, by country. The dashed line represents
+                the average life expectancy across all countries over time. The selected country is then rendered to
+                compare to the international average.
+                The country with the lowest average life expectancy is Sierra Leone, with an average life expectancy of
+                46.11 years. In comparison, the country with the highest average life expectancy is Japan with an
+                average expectancy of 82.54 years.
+                The y-axis (Life Expectancy) ranges between 30 and 95 years, since the dataset's minimum life expectancy
+                across all countries is 36.3 years, and the maximum is 89.0 years.
             </p>
         </div>
     </div>
 
-    <h3>Education vs. Resources</h3>
+    <h3>Education vs. Income Composition of Resources</h3>
 
     <div class="container">
         <div class="center">
-            <iframe src="education_v_resources_scatter.html" width="85%" height="550px" frameborder="0"></iframe>
+            <iframe src="education_v_resources_scatter.html" width="1000px" height="600px" frameborder="0"></iframe>
         </div>
         <div class="text">
             <p>
-                We also need a paragraph to explain the takeaway of the visualization
-                on the webpage, and a paragraph to explain the design idea for the
-                visualization on the separated word document.
+                This scatter plot visualizes the relationship between a country's average years of schooling and the
+                country's average income composition of resources. Then, the county's status of Developing or Developed
+                is labeled by color.
+                Income composition of resources (ICOR) measures how good a country is at using its resources. Resources
+                can include human capital (skills, education, experience), economic resources (assets, income), social
+                resources (networks), and personal resources (health, education). An ICOR of 1 means a country uses all
+                of its resources to their fullest potential.
+                The plot shows that Developed countries have both higher education rates and ICOR. Also, there are more
+                Developing countries than Developed.
+                South Sudan (Developing) has both the loweset average ICOR and years of schooling. Australia (Developed)
+                has the highest average years of schooling. Norway (Developed) has the highests ICOR.
             </p>
         </div>
     </div>
@@ -259,23 +276,18 @@
     <h3>Life Expectancy World Map</h3>
 
     <div class="container">
-      <div class="center">
-        <iframe
-          src="life_expectancy_map.html"
-          width="85%"
-          height="550px"
-          frameborder="0"
-        ></iframe>
-      </div>
-      <div class="text">
-        <p>
-          We also need a paragraph to explain the takeaway of the visualization
-          on the webpage, and a paragraph to explain the design idea for the
-          visualization on the separated word document.
-        </p>
-      </div>
+        <div class="center">
+            <iframe src="life_expectancy_map.html" width="85%" height="550px" frameborder="0"></iframe>
+        </div>
+        <div class="text">
+            <p>
+                We also need a paragraph to explain the takeaway of the visualization
+                on the webpage, and a paragraph to explain the design idea for the
+                visualization on the separated word document.
+            </p>
+        </div>
     </div>
-    
+
     <h3>Graph 5</h3>
 
     <div class="container">
