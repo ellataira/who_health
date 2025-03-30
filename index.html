@@ -1,298 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Health Organization (WHO) Life Expectancy</title>
     <link href="style.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Comfortaa:wght@500&display=swap" rel="stylesheet">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Comfortaa:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <h1>World Health Organization (WHO) Life Expectancy</h1>
 
     <h3>🌎 Introduction 🌎</h3>
 
     <p>
-        The objective of this project is to analyze contributing factors to average life expectancy between countries.
-        We will consider economic, health, and social factors and how they relate to life expectancy.
-        Life expectancy is important to study as it is used to measure a population’s health. We aim to discover
-        relationships between these factors and life expectancy, offering insights into which factors contribute most to
-        longer, healthier lives. Identifying key factors can help governments and policymakers prioritize areas of
-        improvement to invest in, ultimately improving global health outcomes.
+      The objective of this project is to analyze contributing factors to
+      average life expectancy between countries. We will consider economic,
+      health, and social factors and how they relate to life expectancy. Life
+      expectancy is important to study as it is used to measure a population's
+      health. We aim to discover relationships between these factors and life
+      expectancy, offering insights into which factors contribute most to
+      longer, healthier lives. Identifying key factors can help governments and
+      policymakers prioritize areas of improvement to invest in, ultimately
+      improving global health outcomes.
     </p>
 
     <h3>🌎 Data 🌎</h3>
 
     <p>
-        We are sourcing our data from Kaggle. The dataset has 2938 entries (observations) and 22 attributes.
-        This dataset represents the average life expectancy in a country in a year (between 2000-2015).
-        Each observation includes factors as described in the table below.
-        Essentially, this data reflects health-related factors in a country each year and that year’s average life
-        expectancy.
+      We are sourcing our data from Kaggle. The dataset has 2938 entries
+      (observations) and 22 attributes. This dataset represents the average life
+      expectancy in a country in a year (between 2000-2015). Each observation
+      includes factors as described in the table below. Essentially, this data
+      reflects health-related factors in a country each year and that year's
+      average life expectancy.
     </p>
 
-
-    <a href="https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who" target="_blank">
-        Life Expectancy (WHO)
+    <a
+      href="https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who"
+      target="_blank"
+    >
+      Life Expectancy (WHO)
     </a>
 
     <div class="center">
-        <table class="tg">
-            <thead>
-                <tr>
-                    <th class="tg-0lax">Variable Name</th>
-                    <th class="tg-0lax">Details</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="tg-0lax">Country</td>
-                    <td class="tg-0lax">Country</td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">Year</td>
-                    <td class="tg-0lax">Year</td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">Status</td>
-                    <td class="tg-0lax">Developing or Developed status</td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">Life Expectancy</td>
-                    <td class="tg-0lax">Life Expectancy in years</td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">Adult Mortality</td>
-                    <td class="tg-0lax">Adult Mortality Rates of both sexes (probability of dying between 15 and 60
-                        years per 1000 population) </td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">Infant Deaths</td>
-                    <td class="tg-0lax">Number of Infant Deaths per 1000 population
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">Alcohol</td>
-                    <td class="tg-0lax">Alcohol, recorded per capita (15+) consumption (in litres of pure alcohol) </td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">Percentage Expenditure</td>
-                    <td class="tg-0lax">Expenditure on health as a percentage of Gross Domestic Product per capita(%)
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">Hepatitis B
-                    </td>
-                    <td class="tg-0lax">Hepatitis B (HepB) immunization coverage among 1-year-olds (%)</td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">Measles
-                    </td>
-                    <td class="tg-0lax">Measles - number of reported cases per 1000 population
-                    </td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">BMI</td>
-                    <td class="tg-0lax">Average Body Mass Index of entire population
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">Under-five Deaths
-                    </td>
-                    <td class="tg-0lax">Number of under-five deaths per 1000 population
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">Polio</td>
-                    <td class="tg-0lax">Polio (Pol3) immunization coverage among 1-year-olds (%)
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">Total expenditure
-                    </td>
-                    <td class="tg-0lax">General government expenditure on health as a percentage of total government
-                        expenditure (%)
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">Diphtheria</td>
-                    <td class="tg-0lax">Diphtheria tetanus toxoid and pertussis (DTP3) immunization coverage among
-                        1-year-olds (%)
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">HIV/AIDS
-                    </td>
-                    <td class="tg-0lax">Deaths per 1 000 live births HIV/AIDS (0-4 years)
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">GDP
-                    </td>
-                    <td class="tg-0lax">Gross Domestic Product per capita (in USD)
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">Population
-                    </td>
-                    <td class="tg-0lax">Population of the country
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">Thinness 1-19 years
-                    </td>
-                    <td class="tg-0lax">Prevalence of thinness among children and adolescents for Age 10 to 19 (% )
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">Thinness 5-9 years</td>
-                    <td class="tg-0lax">Prevalence of thinness among children for Age 5 to 9(%)
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">Income composition of resources
-
-                    </td>
-                    <td class="tg-0lax">Human Development Index in terms of income composition of resources (index
-                        ranging from 0 to 1)
-                    </td>
-                </tr>
-                <tr>
-                    <td class="tg-0lax">Schooling
-                    </td>
-                    <td class="tg-0lax">Number of years of Schooling(years)
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+      <table class="tg">
+        <thead>
+          <tr>
+            <th class="tg-0lax">Variable Name</th>
+            <th class="tg-0lax">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-0lax">Country</td>
+            <td class="tg-0lax">Country</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Year</td>
+            <td class="tg-0lax">Year</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Status</td>
+            <td class="tg-0lax">Developing or Developed status</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Life Expectancy</td>
+            <td class="tg-0lax">Life Expectancy in years</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Adult Mortality</td>
+            <td class="tg-0lax">
+              Adult Mortality Rates of both sexes (probability of dying between
+              15 and 60 years per 1000 population)
+            </td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Infant Deaths</td>
+            <td class="tg-0lax">Number of Infant Deaths per 1000 population</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Alcohol</td>
+            <td class="tg-0lax">
+              Alcohol, recorded per capita (15+) consumption (in litres of pure
+              alcohol)
+            </td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Percentage Expenditure</td>
+            <td class="tg-0lax">
+              Expenditure on health as a percentage of Gross Domestic Product
+              per capita(%)
+            </td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Hepatitis B</td>
+            <td class="tg-0lax">
+              Hepatitis B (HepB) immunization coverage among 1-year-olds (%)
+            </td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Measles</td>
+            <td class="tg-0lax">
+              Measles - number of reported cases per 1000 population
+            </td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">BMI</td>
+            <td class="tg-0lax">
+              Average Body Mass Index of entire population
+            </td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Under-five Deaths</td>
+            <td class="tg-0lax">
+              Number of under-five deaths per 1000 population
+            </td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Polio</td>
+            <td class="tg-0lax">
+              Polio (Pol3) immunization coverage among 1-year-olds (%)
+            </td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Total expenditure</td>
+            <td class="tg-0lax">
+              General government expenditure on health as a percentage of total
+              government expenditure (%)
+            </td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Diphtheria</td>
+            <td class="tg-0lax">
+              Diphtheria tetanus toxoid and pertussis (DTP3) immunization
+              coverage among 1-year-olds (%)
+            </td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">HIV/AIDS</td>
+            <td class="tg-0lax">
+              Deaths per 1 000 live births HIV/AIDS (0-4 years)
+            </td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">GDP</td>
+            <td class="tg-0lax">Gross Domestic Product per capita (in USD)</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Population</td>
+            <td class="tg-0lax">Population of the country</td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Thinness 1-19 years</td>
+            <td class="tg-0lax">
+              Prevalence of thinness among children and adolescents for Age 10
+              to 19 (% )
+            </td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Thinness 5-9 years</td>
+            <td class="tg-0lax">
+              Prevalence of thinness among children for Age 5 to 9(%)
+            </td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Income composition of resources</td>
+            <td class="tg-0lax">
+              Human Development Index in terms of income composition of
+              resources (index ranging from 0 to 1)
+            </td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">Schooling</td>
+            <td class="tg-0lax">Number of years of Schooling(years)</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-    <p>
-        For further reading on global life expectancy:
-    <ul>
-        <li>
-            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7146991/" target="_blank">
-                LIFE EXPECTANCY AND MORTALITY RATES IN THE UNITED STATES, 1959-2017
-            </a>
-        </li>
-        <li>
-            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5388903/" target="_blank">
-                Global, regional, and national life expectancy, all-cause mortality, and cause-specific mortality for
-                249 causes of death, 1980–2015: a systematic analysis for the Global Burden of Disease Study 2015
-            </a>
-        </li>
-    </ul>
-    </p>
+    <p>For further reading on global life expectancy:</p>
 
+    <ul>
+      <li>
+        <a
+          href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7146991/"
+          target="_blank"
+        >
+          LIFE EXPECTANCY AND MORTALITY RATES IN THE UNITED STATES, 1959-2017
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5388903/"
+          target="_blank"
+        >
+          Global, regional, and national life expectancy, all-cause mortality,
+          and cause-specific mortality for 249 causes of death, 1980–2015: a
+          systematic analysis for the Global Burden of Disease Study 2015
+        </a>
+      </li>
+    </ul>
 
     <h3>Life Expectancy of Selected Country vs. International Average</h3>
 
     <div class="container">
-        <div class="image">
-            <iframe src="life_expectancy_select_vs_average.html" width="1000px" height="620px" frameborder="0"></iframe>
-        </div>
-        <div class="text">
-            <p>
-                This visualization displays life expectancy in years over time, by country. The dashed line represents
-                the average life expectancy across all countries over time. The selected country is then rendered to
-                compare to the international average.
-                The country with the lowest average life expectancy is Sierra Leone, with an average life expectancy of
-                46.11 years. In comparison, the country with the highest average life expectancy is Japan with an
-                average expectancy of 82.54 years.
-                The y-axis (Life Expectancy) ranges between 30 and 95 years, since the dataset's minimum life expectancy
-                across all countries is 36.3 years, and the maximum is 89.0 years.
-            </p>
-        </div>
+      <div class="image">
+        <iframe
+          src="life_expectancy_select_vs_average.html"
+          width="1000px"
+          height="620px"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <div class="text">
+        <p>
+          This visualization displays life expectancy in years over time, by
+          country. The dashed line represents the average life expectancy across
+          all countries over time. The selected country is then rendered to
+          compare to the international average. The country with the lowest
+          average life expectancy is Sierra Leone, with an average life
+          expectancy of 46.11 years. In comparison, the country with the highest
+          average life expectancy is Japan with an average expectancy of 82.54
+          years. The y-axis (Life Expectancy) ranges between 30 and 95 years,
+          since the dataset's minimum life expectancy across all countries is
+          36.3 years, and the maximum is 89.0 years.
+        </p>
+      </div>
     </div>
 
     <h3>Education vs. Income Composition of Resources</h3>
 
     <div class="container">
-        <div class="center">
-            <iframe src="education_v_resources_scatter.html" width="1000px" height="600px" frameborder="0"></iframe>
-        </div>
-        <div class="text">
-            <p>
-                This scatter plot visualizes the relationship between a country's average years of schooling and the
-                country's average income composition of resources. Then, the county's status of Developing or Developed
-                is labeled by color.
-                Income composition of resources (ICOR) measures how good a country is at using its resources. Resources
-                can include human capital (skills, education, experience), economic resources (assets, income), social
-                resources (networks), and personal resources (health, education). An ICOR of 1 means a country uses all
-                of its resources to their fullest potential.
-                The plot shows that Developed countries have both higher education rates and ICOR. Also, there are more
-                Developing countries than Developed.
-                South Sudan (Developing) has both the loweset average ICOR and years of schooling. Australia (Developed)
-                has the highest average years of schooling. Norway (Developed) has the highests ICOR.
-            </p>
-        </div>
+      <div class="center">
+        <iframe
+          src="education_v_resources_scatter.html"
+          width="1000px"
+          height="600px"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <div class="text">
+        <p>
+          This scatter plot visualizes the relationship between a country's
+          average years of schooling and the country's average income
+          composition of resources. Then, the county's status of Developing or
+          Developed is labeled by color. Income composition of resources (ICOR)
+          measures how good a country is at using its resources. Resources can
+          include human capital (skills, education, experience), economic
+          resources (assets, income), social resources (networks), and personal
+          resources (health, education). An ICOR of 1 means a country uses all
+          of its resources to their fullest potential. The plot shows that
+          Developed countries have both higher education rates and ICOR. Also,
+          there are more Developing countries than Developed. South Sudan
+          (Developing) has both the loweset average ICOR and years of schooling.
+          Australia (Developed) has the highest average years of schooling.
+          Norway (Developed) has the highests ICOR.
+        </p>
+      </div>
     </div>
 
     <h3>Top 20 Countries by Infant Deaths</h3>
 
     <div class="container">
-        <div class="center">
-            <iframe src="infant-deaths/infant-deaths.html" width="85%" height="550px" frameborder="0"></iframe>
-        </div>
-        <div class="text">
-            <p>
-                We also need a paragraph to explain the takeaway of the visualization
-                on the webpage, and a paragraph to explain the design idea for the
-                visualization on the separated word document.
-            </p>
-        </div>
+      <div class="center">
+        <iframe
+          src="infant-deaths/infant-deaths.html"
+          width="85%"
+          height="550px"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <div class="text">
+        <p>
+          We also need a paragraph to explain the takeaway of the visualization
+          on the webpage, and a paragraph to explain the design idea for the
+          visualization on the separated word document.
+        </p>
+      </div>
     </div>
-
 
     <h3>HIV/AIDS Deaths Over Time</h3>
 
     <div class="container">
-        <div class="center">
-            <iframe src="hivaids_vs_year_country.html" width="85%" height="550px" frameborder="0"></iframe>
-        </div>
-        <div class="text">
-            <p>
-                We also need a paragraph to explain the takeaway of the visualization
-                on the webpage, and a paragraph to explain the design idea for the
-                visualization on the separated word document.
-            </p>
-        </div>
+      <div class="center">
+        <iframe
+          src="hivaids_vs_year_country.html"
+          width="85%"
+          height="550px"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <div class="text">
+        <p>
+          We also need a paragraph to explain the takeaway of the visualization
+          on the webpage, and a paragraph to explain the design idea for the
+          visualization on the separated word document.
+        </p>
+      </div>
     </div>
 
     <h3>Life Expectancy World Map</h3>
 
     <div class="container">
-        <div class="center">
-            <iframe src="life_expectancy_map.html" width="85%" height="550px" frameborder="0"></iframe>
-        </div>
-        <div class="text">
-            <p>
-                We also need a paragraph to explain the takeaway of the visualization
-                on the webpage, and a paragraph to explain the design idea for the
-                visualization on the separated word document.
-            </p>
-        </div>
+      <div class="center">
+        <iframe
+          src="life_expectancy_map.html"
+          width="85%"
+          height="550px"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <div class="text">
+        <p>
+          We visualize each country's life expectancy using a world map to
+          identify any trends related to geographical location. We used
+          geographical data from
+          <a
+            href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/"
+            target="_blank"
+            >Natural Earth</a
+          >
+          to generate the world map. Discrepancies between country names in the
+          life expectancy dataset and the Natural Earth dataset required manual
+          preprocessing, and countries with missing data are displayed in light
+          grey. The color gradient on the map represents life expectancy in
+          years. Users can zoom in and out on the map for a closer look, and
+          clicking on a specific country reveals its life expectancy value.
+        </p>
+
+        <p>
+          Looking at the map, countries in North America, Western Europe, and
+          Australia have higher life expectancies. These regions tend to have
+          advanced healthcare systems, higher living standards, and better
+          access to medical services. Many African nations, particularly in
+          central and sub-Saharan regions, show significantly lower life
+          expectancy. Factors such as limited healthcare infrastructure, higher
+          rates of infectious diseases, and socio-economic challenges contribute
+          to these lower figures.
+        </p>
+      </div>
     </div>
 
     <h3>Conclusion</h3>
     <p>
-        A summary for your findings, including what you have learned from the data visualization and what
-        can be done in the future.
+      Overall, our visualizations indicate that life expectancy has steadily
+      increased from 2000 to 2015, reflecting advancements in healthcare and
+      living conditions, though disparities remain across regions. To address
+      these disparities, future analyses should focus on identifying challenges
+      in countries with lower health and education metrics for more targeted
+      solutions. Looking at more recent data beyond 2015 will also be helpful to
+      assess changes in education, healthcare, and economics that may have
+      occurred since then.
     </p>
-</body>
-
+  </body>
 </html>
