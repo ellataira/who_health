@@ -205,117 +205,6 @@
       </li>
     </ul>
 
-    <h3>Life Expectancy of Selected Country vs. International Average</h3>
-
-    <div class="container">
-      <div class="image">
-        <iframe
-          src="life_expectancy_select_vs_average.html"
-          width="1000px"
-          height="620px"
-          frameborder="0"
-        ></iframe>
-      </div>
-      <div class="text">
-        <p>
-          This visualization displays life expectancy in years over time, by
-          country. The dashed line represents the average life expectancy across
-          all countries over time. The selected country is then rendered to
-          compare to the international average. The country with the lowest
-          average life expectancy is Sierra Leone, with an average life
-          expectancy of 46.11 years. In comparison, the country with the highest
-          average life expectancy is Japan with an average expectancy of 82.54
-          years. The y-axis (Life Expectancy) ranges between 30 and 95 years,
-          since the dataset's minimum life expectancy across all countries is
-          36.3 years, and the maximum is 89.0 years.
-        </p>
-      </div>
-    </div>
-
-    <h3>Education vs. Income Composition of Resources</h3>
-
-    <div class="container">
-      <div class="center">
-        <iframe
-          src="education_v_resources_scatter.html"
-          width="1000px"
-          height="600px"
-          frameborder="0"
-        ></iframe>
-      </div>
-      <div class="text">
-        <p>
-          This scatter plot visualizes the relationship between a country's
-          average years of schooling and the country's average income
-          composition of resources. Then, the county's status of Developing or
-          Developed is labeled by color. Income composition of resources (ICOR)
-          measures how good a country is at using its resources. Resources can
-          include human capital (skills, education, experience), economic
-          resources (assets, income), social resources (networks), and personal
-          resources (health, education). An ICOR of 1 means a country uses all
-          of its resources to their fullest potential. The plot shows that
-          Developed countries have both higher education rates and ICOR. Also,
-          there are more Developing countries than Developed. South Sudan
-          (Developing) has both the loweset average ICOR and years of schooling.
-          Australia (Developed) has the highest average years of schooling.
-          Norway (Developed) has the highests ICOR.
-        </p>
-      </div>
-    </div>
-
-    <h3>Top 20 Countries by Infant Deaths</h3>
-
-    <div class="container">
-      <div class="center">
-        <iframe
-          src="infant-deaths/infant-deaths.html"
-          width="85%"
-          height="580px"
-          frameborder="0"
-        ></iframe>
-      </div>
-      <div class="text">
-        <p>
-          As shown in the above horizontal bar chart, in 2015, the countries
-          with the highest number of infant deaths were primarily concentrated
-          in regions with limited access to healthcare and high birth rates.
-          This visualization reveals that countries such as India, Nigeria, and
-          Pakistan suffered more infant deaths than others — this hints at a
-          disparity in maternal and child healthcare as well as insufficient
-          healthcare funding across these regions. By focusing on the top 20
-          countries, the chart draws attention to where interventions could have
-          greater impact in reducing infant mortality rates.
-        </p>
-      </div>
-    </div>
-
-    <h3>HIV/AIDS Deaths Over Time</h3>
-
-    <div class="container">
-      <div class="center">
-        <iframe
-          src="hivaids_vs_year_country.html"
-          width="1000px"
-          height="620px"
-          frameborder="0"
-        ></iframe>
-      </div>
-      <div class="text">
-        <p>
-          This visualization shows the trend of HIV/AIDS-related deaths over
-          time in the five countries with the highest cumulative totals. The
-          chart shows that in the early 2000s, countries like Swaziland,
-          Zimbabwe, and Lesotho experienced very high numbers of
-          HIV/AIDS-related deaths. However, in many of these countries, there is
-          a noticeable decline in HIV/AIDS deaths over time, likely due to the
-          increased availability of antiretroviral therapy (ART), public health
-          campaigns, and aid programs. Despite this overall progress, the data
-          indicates how the HIV/AIDS epidemic disproportionately affected
-          specific regions, particularly in sub-Saharan Africa.
-        </p>
-      </div>
-    </div>
-
     <h3>Life Expectancy World Map</h3>
 
     <div class="container">
@@ -329,9 +218,10 @@
       </div>
       <div class="text">
         <p>
-          We visualize each country's life expectancy using a world map to
-          identify any trends related to geographical location. We used
-          geographical data from
+          Life expectancy serves as a key indicator of a nation's overall health
+          and quality of life. We visualize each country's life expectancy using
+          a world map to identify any trends related to geographical location.
+          We used geographical data from
           <a
             href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/"
             target="_blank"
@@ -358,16 +248,150 @@
       </div>
     </div>
 
+    <h3>Life Expectancy of Selected Country vs. International Average</h3>
+
+    <div class="container">
+      <div class="image">
+        <iframe
+          src="life_expectancy_select_vs_average.html"
+          width="1000px"
+          height="620px"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <div class="text">
+        <p>
+          To complement this broad view, we visualize each country's life
+          expectancy over time by comparing it to the international average for
+          a more focused view. This visualization displays life expectancy in
+          years over time, by country. The dashed line represents the average
+          life expectancy across all countries over time. The selected country
+          is then rendered to compare to the international average. The country
+          with the lowest average life expectancy is Sierra Leone, with an
+          average life expectancy of 46.11 years. In comparison, the country
+          with the highest average life expectancy is Japan with an average
+          expectancy of 82.54 years. The y-axis (Life Expectancy) ranges between
+          30 and 95 years, since the dataset's minimum life expectancy across
+          all countries is 36.3 years, and the maximum is 89.0 years.
+        </p>
+      </div>
+    </div>
+
+    <h3>Education vs. Income Composition of Resources</h3>
+
+    <div class="container">
+      <div class="center">
+        <iframe
+          src="education_v_resources_scatter.html"
+          width="1000px"
+          height="600px"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <div class="text">
+        <p>
+          Beyond healthcare, socioeconomic factors such as education and income
+          composition play a crucial role in determining a population's
+          well-being, so we decided to visualize each country's average years of
+          education and average income composition of resources in a scatter
+          plot. Then, the county's status of Developing or Developed is labeled
+          by color. Income composition of resources (ICOR) measures how good a
+          country is at using its resources. Resources can include human capital
+          (skills, education, experience), economic resources (assets, income),
+          social resources (networks), and personal resources (health,
+          education). An ICOR of 1 means a country uses all of its resources to
+          their fullest potential. The plot shows that Developed countries have
+          both higher education rates and ICOR. Also, there are more Developing
+          countries than Developed. South Sudan (Developing) has both the
+          loweset average ICOR and years of schooling. Australia (Developed) has
+          the highest average years of schooling. Norway (Developed) has the
+          highests ICOR.
+        </p>
+      </div>
+    </div>
+
+    <h3>Top 20 Countries by Infant Deaths</h3>
+
+    <div class="container">
+      <div class="center">
+        <iframe
+          src="infant-deaths/infant-deaths.html"
+          width="85%"
+          height="580px"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <div class="text">
+        <p>
+          While life expectancy and socioeconomic factors shape overall health
+          outcomes, specific public health crises, such as infant mortality and
+          HIV/AIDS, reveal the drastic inequalities between countries. As shown
+          in the above horizontal bar chart, in 2015, the countries with the
+          highest number of infant deaths were primarily concentrated in regions
+          with limited access to healthcare and high birth rates. This
+          visualization reveals that countries such as India, Nigeria, and
+          Pakistan suffered more infant deaths than others — this hints at a
+          disparity in maternal and child healthcare as well as insufficient
+          healthcare funding across these regions. By focusing on the top 20
+          countries, the chart draws attention to where interventions could have
+          greater impact in reducing infant mortality rates.
+        </p>
+      </div>
+    </div>
+
+    <h3>HIV/AIDS Deaths Over Time</h3>
+
+    <div class="container">
+      <div class="center">
+        <iframe
+          src="hivaids_vs_year_country.html"
+          width="1000px"
+          height="620px"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <div class="text">
+        <p>
+          Another important public health issue is the prevalence of
+          HIV/AIDS-related deaths. This visualization shows the trend of
+          HIV/AIDS-related deaths over time in the five countries with the
+          highest cumulative totals. The chart shows that in the early 2000s,
+          countries like Swaziland, Zimbabwe, and Lesotho experienced very high
+          numbers of HIV/AIDS-related deaths. However, in many of these
+          countries, there is a noticeable decline in HIV/AIDS deaths over time,
+          likely due to the increased availability of antiretroviral therapy
+          (ART), public health campaigns, and aid programs. Despite this overall
+          progress, the data indicates how the HIV/AIDS epidemic
+          disproportionately affected specific regions, particularly in
+          sub-Saharan Africa.
+        </p>
+      </div>
+    </div>
+
     <h3>Conclusion</h3>
     <p>
       Overall, our visualizations indicate that life expectancy has steadily
       increased from 2000 to 2015, reflecting advancements in healthcare and
-      living conditions, though disparities remain across regions. To address
-      these disparities, future analyses should focus on identifying challenges
-      in countries with lower health and education metrics for more targeted
-      solutions. Looking at more recent data beyond 2015 will also be helpful to
-      assess changes in education, healthcare, and economics that may have
-      occurred since then.
+      living conditions, though disparities remain across regions.
     </p>
+    <p>Future Studies:</p>
+    <ul>
+      <li>
+        Our findings suggest a clear connection between healthcare access and
+        life expectancy, but a deeper dive into healthcare policy effectiveness
+        could provide insights for future action.
+      </li>
+      <li>
+        To address regional health disparities, future analyses should focus on
+        identifying challenges in countries with lower health and education
+        metrics for more targeted solutions.
+      </li>
+      <li>
+        Many health challenges are worsened by environmental factors such as air
+        pollution, access to clean water, and climate change-related natural
+        disasters. Future analysis could incorporate environmental indicators to
+        examine how they shape public health outcomes.
+      </li>
+    </ul>
   </body>
 </html>
