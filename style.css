@@ -53,29 +53,62 @@ h3 {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    font-family: 'Quicksand', sans-serif;
 }
 
 .tg td, .tg th {
     border: 1px solid var(--leaf-green);
-    font-family: 'Quicksand', sans-serif;
     font-size: 14px;
     padding: 12px 8px;
     word-break: normal;
+    text-align: left;
+    font-weight: 600;
 }
 
 .tg th {
     background-color: var(--earth-green);
     color: white;
     font-weight: 600;
-    text-align: left;
 }
 
-.tg tr:nth-child(even) {
-    background-color: rgba(139, 195, 74, 0.1);
+.tg td.category {
+    background-color: var(--sky-blue);
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
 }
 
-.tg tr:hover {
-    background-color: rgba(139, 195, 74, 0.2);
+/* Color coding for different categories */
+.tg tr.id-class td:not(.category) {
+    background-color: rgba(139, 195, 74, 0.05);
+}
+
+.tg tr.health-outcome td:not(.category) {
+    background-color: rgba(30, 136, 229, 0.05);
+}
+
+.tg tr.mortality td:not(.category) {
+    background-color: rgba(255, 213, 79, 0.05);
+}
+
+.tg tr.disease td:not(.category) {
+    background-color: rgba(135, 206, 235, 0.05);
+}
+
+.tg tr.nutrition td:not(.category) {
+    background-color: rgba(230, 213, 184, 0.1);
+}
+
+.tg tr.economic td:not(.category) {
+    background-color: rgba(106, 27, 154, 0.05);
+}
+
+.tg tr.socioeconomic td:not(.category) {
+    background-color: rgba(233, 30, 99, 0.05);
+}
+
+.tg tr:hover td:not(.category) {
+    background-color: rgba(139, 195, 74, 0.15);
 }
 
 .center {
