@@ -58,7 +58,9 @@
         <tbody>
           <!-- Identification & Classification -->
           <tr class="id-class">
-            <td class="category" rowspan="3">Identification & Classification</td>
+            <td class="category" rowspan="3">
+              Identification & Classification
+            </td>
             <td class="tg-0lax">Country</td>
             <td class="tg-0lax">Country</td>
           </tr>
@@ -70,14 +72,14 @@
             <td class="tg-0lax">Status</td>
             <td class="tg-0lax">Developing or Developed status</td>
           </tr>
-          
+
           <!-- Key Health Outcome -->
           <tr class="health-outcome">
             <td class="category" rowspan="1">Key Health Outcome</td>
             <td class="tg-0lax">Life Expectancy</td>
             <td class="tg-0lax">Life Expectancy in years</td>
           </tr>
-          
+
           <!-- Mortality Indicators -->
           <tr class="mortality">
             <td class="category" rowspan="3">Mortality Indicators</td>
@@ -97,7 +99,7 @@
               Number of under-five deaths per 1000 population
             </td>
           </tr>
-          
+
           <!-- Disease & Health Conditions -->
           <tr class="disease">
             <td class="category" rowspan="6">Disease & Health Conditions</td>
@@ -138,7 +140,7 @@
               Deaths per 1,000 live births HIV/AIDS (0-4 years)
             </td>
           </tr>
-          
+
           <!-- Nutritional Status -->
           <tr class="nutrition">
             <td class="category" rowspan="3">Nutritional Status</td>
@@ -160,7 +162,7 @@
               Prevalence of thinness among children for Age 5 to 9(%)
             </td>
           </tr>
-          
+
           <!-- Economic & Healthcare Spending -->
           <tr class="economic">
             <td class="category" rowspan="3">Economic & Healthcare Spending</td>
@@ -181,7 +183,7 @@
             <td class="tg-0lax">GDP</td>
             <td class="tg-0lax">Gross Domestic Product per capita (in USD)</td>
           </tr>
-          
+
           <!-- Socioeconomic Factors -->
           <tr class="socioeconomic">
             <td class="category" rowspan="3">Socioeconomic Factors</td>
@@ -242,26 +244,10 @@
           Life expectancy serves as a key indicator of a nation's overall health
           and quality of life. We visualize each country's life expectancy using
           a dual world map, allowing for a side-by-side comparison with
-          healthcare expenditure as a percentage of GDP. A dual map gives a
-          clearer understanding of the relationship between healthcare spending
-          and life expectancy across different regions.
-        </p>
-
-        <p>
-          We used geographical data from
-          <a
-            href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/"
-            target="_blank"
-            >Natural Earth</a
-          >
-          to generate the world map. Discrepancies between country names in the
-          life expectancy dataset and the Natural Earth dataset required manual
-          preprocessing, and countries with missing data are displayed in light
-          grey. The color gradient on the left map represents life expectancy in
-          years (blue scale), while the right map represents healthcare
-          expenditure as a percentage of GDP (red scale). Users can zoom in and
-          out for a closer look, and both hovering and clicking on a specific
-          country reveals its corresponding values.
+          healthcare expenditure as a percentage of GDP. The color gradient on
+          the left map represents life expectancy in years (blue scale), while
+          the right map represents healthcare expenditure as a percentage of GDP
+          (red scale). 
         </p>
 
         <p>
@@ -329,30 +315,33 @@
           well-being, so we decided to visualize each country's average years of
           education and average income composition of resources in a scatter
           plot. Then, the county's status of Developing or Developed is labeled
-          by color. 
+          by color.
         </p>
         <p>
-          Income composition of resources (ICOR) measures how good a
-          country is at using its resources. Resources can include human capital
-          (skills, education, experience), economic resources (assets, income),
-          social resources (networks), and personal resources (health,
-          education). ICOR ranges between 0 and 1, where an ICOR of 1 means a country uses all of its resources to
-          their fullest potential (100%), and values &lt 1 indicate &lt100% resource efficiency.
+          Income composition of resources (ICOR) measures how good a country is
+          at using its resources. Resources can include human capital (skills,
+          education, experience), economic resources (assets, income), social
+          resources (networks), and personal resources (health, education). ICOR
+          ranges between 0 and 1, where an ICOR of 1 means a country uses all of
+          its resources to their fullest potential (100%), and values &lt 1
+          indicate &lt100% resource efficiency.
         </p>
         <p>
-          Developed vs Developing status refers to a nation's industrial base and Human Development Index. See this <a
-          href="https://en.wikipedia.org/wiki/Developing_country"
-          target="_blank"
-          >page</a
-        > for further detail. 
+          Developed vs Developing status refers to a nation's industrial base
+          and Human Development Index. See this
+          <a
+            href="https://en.wikipedia.org/wiki/Developing_country"
+            target="_blank"
+            >page</a
+          >
+          for further detail.
         </p>
         <p>
-          The plot shows that Developed countries have
-          both higher education rates and ICOR. Also, there are more Developing
-          countries than Developed. South Sudan (Developing) has both the
-          loweset average ICOR and years of schooling. Australia (Developed) has
-          the highest average years of schooling. Norway (Developed) has the
-          highests ICOR.
+          The plot shows that Developed countries have both higher education
+          rates and ICOR. Also, there are more Developing countries than
+          Developed. South Sudan (Developing) has both the loweset average ICOR
+          and years of schooling. Australia (Developed) has the highest average
+          years of schooling. Norway (Developed) has the highests ICOR.
         </p>
       </div>
     </div>
